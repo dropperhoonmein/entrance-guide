@@ -1,0 +1,644 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.body-theme{
+    --clr-light:#121212;
+    --clr-dark:#ffffff;
+    --clr-child:rgb(249, 249, 249);
+    --clr-border:rgb(152, 152, 152);
+}
+:root{
+    --clr-dark:#121212;
+    --clr-light:#ffffff;
+    --clr-child:rgb(29, 29, 29);
+    --clr-border:rgb(66, 66, 66);
+}
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    width:7px;
+    background-color: rgb(92, 92, 92);
+    border-radius: 25px;
+}
+body{
+    background-color: var(--clr-dark);
+    padding-top: 55px;
+}
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: #03a3ed;
+}
+header h1{
+    color: white;
+}
+.section1 h2{
+    margin: 45px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 0px;
+    background-color: #03a3ed;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar li{
+    list-style: none;
+    padding: 10px;
+    margin: 5px 15px;
+}
+.navbar li img{
+    width: 0px;
+    opacity: 0;
+}
+#imgli{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+section{
+    width: 100%;
+}
+.section1{
+    margin-top: 20px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    animation: load 1.5s   1 ;
+
+}
+.child{
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    border-radius: 9px;
+    text-align: center;
+    background-color: var(--clr-child);
+    padding: 20px 0px;
+}
+.bigchild{
+    display: inline-block;
+    width: 50%;
+    margin: 20px;
+    border-radius: 9px;
+    text-align: center;
+    background-color: var(--clr-child);
+    padding: 20px 0px;
+    animation: load 2s   1 ;
+    padding: 20px;
+}
+@keyframes load {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.bigchild p{
+    margin: 15px 30px;
+    color: var(--clr-light);
+    line-height: 22px;
+    word-spacing: 0.5px;
+}
+#P{
+    margin-top: 25px;
+}
+.logo{
+    width: 25%;
+}
+.child h2{
+    color: var(--clr-light);
+    margin: 20px;
+}
+.child p{
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+}
+.child .btn1,.btn2{
+    border: 2px solid var(--clr-border) ;
+    cursor: pointer;
+    width: 35%;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 7px;
+    margin: 20px;
+    display: inline-block;
+}
+.btn3{
+    border: 2px solid var(--clr-border) ;
+    cursor: pointer;
+    width: 80%;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 7px;
+    margin: 20px;
+    margin-top: 0px;
+    display: inline-block;
+}
+.btn1 p{
+    color: #5ff264;
+}
+.btn2 p{
+    color: #8992fc;
+}
+.btn3 p{
+    color: rgb(236 134 134);
+}
+.btn1:hover{
+    background-color: #5ff264;
+    border: none;
+    box-shadow: 1px 1px 6px #5ff264;
+    transition: 700ms ease-in-out;
+}
+.btn1:hover .PYQ{
+    color: white;
+    transition: 900ms ease-in-out;
+}
+.btn2:hover{
+    background-color: #8992fc;
+    border: none;
+    box-shadow: 1px 1px 6px #8992fc;
+    transition: 700ms ease-in-out;
+}
+.btn2:hover .Mock{
+    color: white;
+    transition: 900ms ease-in-out;
+}
+.btn3:hover{
+    background-color: rgb(236 134 134);
+    border: none;
+    box-shadow: 1px 1px 6px rgb(236 134 134);
+    transition: 700ms ease-in-out;
+}
+.btn3:hover .Snotes{
+    color: white;
+    transition: 900ms ease-in-out;
+}
+.btn4{
+    border: 2px solid var(--clr-border) ;
+    cursor: pointer;
+    width: 80%;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 7px;
+    margin: 20px;
+    margin-top: 0px;
+    display: inline-block;
+}
+.btn4 p{
+    color: #8992fc;
+}
+.btn4:hover{
+    background-color: #8992fc;
+    border: none;
+    box-shadow: 1px 1px 6px #8992fc;
+    transition: 700ms ease-in-out;
+}
+.btn4:hover .Mock{
+    color: white;
+    transition: 900ms ease-in-out;
+}
+#P, #C, #M{
+    width: 90%;
+}
+.container table{
+    text-align: center;
+    margin: auto;
+}
+#con{
+    width: 200px;
+    font-size: 18px;
+    animation: load 2s  1 ; 
+}
+#about{
+    margin-top: 50px;
+}
+.smoothload{
+    animation: load 2s  1 ;
+}
+footer{
+    margin-top: 50px;
+}
+footer p{
+    color: var(--clr-light);
+}
+.theme{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+    position: fixed;
+    top: 4px;
+    right: 4px;
+    background-image: url(light\ mode.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Book PDF*/
+.bookimg{
+    width: 75%;
+    margin: 15px;
+    
+}
+.container table h2{
+    margin: 25px;
+}
+.container table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2,h3{
+    margin: 15px;
+    text-align: center;
+    color: var(--clr-light);
+}
+.dots{
+    margin: 10px auto;
+    width: 15%;
+    border: none;
+    border-bottom: dotted;
+    border-width: 7px;
+    border-color: var(--clr-border);
+}
+.form{
+    width: 60%;
+    margin: auto;
+    /* min-width: 265px; */
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    background-color: var(--clr-child);
+    animation: load 2s   1 ;
+}
+.form form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form input{
+    width: 70%;
+    text-align: center;
+    margin: 15px auto;
+    height: 35px;
+    color: var(--clr-light);
+    border-radius: 10px;
+    border: 1px solid var(--clr-border);
+    background-color: var(--clr-dark);
+}
+.form .text{
+    width: 70%;
+    text-align: center;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: 1px solid var(--clr-border);
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+}
+.form button{
+    margin: 15px;
+    font-size: 18px;
+}
+.section2{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+#scontainer{
+    background-color: var(--clr-border);
+    padding: 15px;
+    border-radius: 9px;
+    width: 60%;
+    min-width: 240px;
+}
+#scontainer a {
+    text-decoration: none;
+}
+#scontainer .dates{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--clr-child);
+}
+#eduniti, #pw{
+    border-radius: 55px;
+   }
+/*Responsive Design*/
+@media (max-width:1416px) {
+    .child{
+        width: 30%;
+        margin: 15px;
+    }
+    .container{
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+    .bigchild{
+        width: 55%;
+    }
+}
+@media (max-width:1029px) {
+    .container {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .child{
+        width: 30%;
+        margin: 10px;
+    }
+    .logo{
+        width: 20%;
+    }
+    .child .btn1,.btn2{
+        width: 33%;
+    }
+    .bigchild{
+        width: 60%;
+    }
+    .form{
+        width: 65%;
+    }
+}
+@media (max-width:910px) {
+    .child{
+        width: 40%;
+        margin: 20px;
+    }
+    .container {
+        width: 95%;
+    }
+    .bigchild{
+        width: 65%;
+    }
+    .form input{
+        width: 75%;
+    }
+    .text{
+        width: 75%;
+    }
+}
+/*For Header*/
+@media (max-width:835px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        height: 90px;
+    }
+    .navbar h1{
+        margin-top: 7px;
+    }
+    .child{
+        width: 43%;
+        margin: 15px;
+    }
+    .container {
+        width: 100%;
+    }
+    .bigchild{
+        width: 68%;
+    }
+    .form{
+        width: 70%;
+    }
+    .form input{
+        width: 77%;
+    }
+    .text{
+        width: 77%;
+    }
+}
+@media (max-width:655px)
+ {
+    .navbar h1{
+        position: absolute;
+        top: 10px;
+        transform: translateX(-65px);
+    }
+    .navbar{
+        height: 60px;
+    }
+    .navbar li{
+        transform: translateY(-90px);
+    }
+    #imgli{
+        transform: translateY(0);
+    }
+    h2{
+        margin-top: 25px;
+    }
+    ul{
+        background-color: #121212d5;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        top: 0px;
+        left: 0px;
+        height: 100vh;
+        width: 190px;
+        transform: translateX(-190px);
+    }
+    .icon{
+        transform: translateX(190px);
+        width: 50px;
+    }
+    .navbar li img{
+        width: 100%;
+        opacity: 1;
+        cursor: pointer;
+    }
+    ul:hover{
+        transform: translateX(0px);
+        transition: 850ms ease-in-out;
+    }
+    ul:hover .icon{
+        opacity: 0;
+        transition: 50ms;
+    }
+    .child{
+        width: 60%;
+    }
+    .container{
+        width: 95%;
+    }
+    .logo{
+        width: 25%;
+    }
+    .bigchild{
+        width: 70%;
+    }
+    .bigchild p{
+        margin: 15px;
+    }
+    .form{
+        width: 80%;
+    }
+    .form input{
+        width: 80%;
+    }
+    .text{
+        width: 80%;
+    }
+}
+@media (max-width:280px) {
+    .bigchild{
+        width: 75%;
+    }
+    .bigchild p{
+        margin: 10px;
+    }
+}
+@media (max-width:345px){
+    header h1{
+        font-size: 20px;
+    }
+}
+@media (max-width:253px){
+    header h1{
+        font-size: 19px;
+    }
+}
+@media (max-width:242px){
+    header h1{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:540px) {
+    .child{
+        width: 80%;
+    }
+    .theme{
+        top: 6px;
+    }
+    .bigchild{
+        width: 80%;
+    }
+    .form{
+        width: 90%;
+    }
+    .form input{
+        width: 82%;
+    }
+    .text{
+        width: 82%;
+    }
+}
+@media (max-width:370px) {
+    .child{
+        width: 90%;
+    }
+    .bigchild{
+        width: 85%;
+    }
+    .form{
+        width: 92%;
+    }
+    .form input{
+        width: 85%;
+    }
+    .text{
+        width: 85%;
+    }
+}
+@media (max-width:320px) {
+    .logo{
+        width: 25%;
+    }
+    .bigchild{
+        width: 88%;
+    }
+    .form{
+        width: 93%;
+    }
+    .form input{
+        width: 87%;
+    }
+    .text{
+        width: 87%;
+    }
+}
+
+@media (max-width:290px) {
+    .child {
+        width: 95%;
+    }
+    .container{
+        width: 100%;
+    }
+    .bigchild{
+        width: 90%;
+    }
+    .form{
+        width: 94%;
+    }
+    .form input{
+        width: 89%;
+    }
+    .text{
+        width: 89%;
+    }
+}
+@media (max-width:265px) {
+    .child {
+        width: 100%;
+        margin: 12px;
+        background-color: var(--clr-child);
+    }
+    .child button{
+        margin: 10px;
+    }
+    .bigchild{
+        width: 95%;
+    }
+    .form{
+        width: 95%;
+    }
+    .form input{
+        width: 90%;
+    }
+    .text{
+        width: 90%;
+    }
+}
